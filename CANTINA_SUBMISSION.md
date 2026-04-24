@@ -166,4 +166,4 @@ function isGameFinalized(IDisputeGame _game) public view returns (bool) {
 ```
 
 ---
-*Verified via forked-mainnet simulation.*
+*Verified via forked-mainnet testing.*

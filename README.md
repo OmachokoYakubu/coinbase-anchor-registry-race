@@ -49,7 +49,7 @@ forge install
 # 4. Set your Ethereum mainnet RPC
 export MAINNET_RPC_URL="https://mainnet.infura.io/v3/<YOUR_KEY>"
 
-# 5. Run the exploit simulation
+# 5. Run the exploit testing
 forge test --match-contract CoinbaseRaceProof -vvvv
 ```
 
@@ -57,7 +57,7 @@ forge test --match-contract CoinbaseRaceProof -vvvv
 
 ## PoC Breakdown
 
-The simulation performs the following atomic steps on a mainnet fork:
+The testing performs the following atomic steps on a mainnet fork:
 1. **Mock Resolution**: Simulates a malicious FaultDisputeGame resolving at the current block.
 2. **Mock Pause**: Simulates the Guardian's emergency response (pausing the system).
 3. **Timer Decay**: Warps time by 3.5 days.
